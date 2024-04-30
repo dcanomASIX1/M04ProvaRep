@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .color {background-color: {{color}};}
+
+    </style>
+    <title>Document</title>
+</head>
+<body class="color">
+    <h1>OSTRAS</h1>
+    <p>he tret un {{nota}} a {{modul}}</p>
+
+    {% if (nota >= 5) and  (nota <= 7) %}
+        <h2>he aprobado</h2>
+    {% elif (nota >= 7) %}
+        <h2>notable</h2>
+    {% else %}
+        <h2>he suspendido</h2>
+    {% endif %}
+    
+
+
+    {% for a in range(nota) %}
+    {% if nota >= 5  %}
+    <h2>he aprobado</h2>
+    {% else %}
+    <h2>he suspendido</h2>
+    {% endif %}
+    {% endfor%}
+    {% if img_gato == True %}
+    <img    src="static/img/bober.png" with="1000px" height = "1000px">
+    {% else %}
+    <h2>No gato</h2>
+{% endif %}
+</body>
+</html>

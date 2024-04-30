@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>Exemple de propietats CSS</title>
+        <!-- ENLLAÇ AL FULL D'ESTIL EXTERN -->
+        <link rel="stylesheet" type="text/css" href="Activitat.css">
+        <link rel="stylesheet" type="text/css" href="fonts.css">
+	</head>
+
+	<body>
+        
+                <nav class="main">
+                        <a href = "Inicio.html" class="nav-enlace">Inici</a>
+                        <a href = "Formularios.html" class="nav-enlace">Formulario</a>
+                        <a href = "Galeria.html" class="nav-enlace">Galeria</a>
+                        <a href = "Horarios.html" class="nav-enlace">Horarios</a>
+                
+                </nav>
+        <header> 
+           <h1> Formulario de Aplicacion </h1> 
+        </header>
+    <main>
+
+        <h1></h1>
+
+
+        
+        <form action="https://alumnat.cat/form" 
+        method="post" name="form-ejemplo"
+        enctype="application/x-www-form-urlencoded">
+
+
+
+        <div class="FlexibleGeneral">
+        <fieldset class="FondoFormulario"> <legend class="TextoLeyenda"> Datos personales </legend>
+                <div class="FormularioFlex2">
+                <div>
+                <div><label for="DNI">DNI:</label> <div class="campo"><input type="text" placeholder="Pon aqui tu DNI" name="DNI"/></div></div>
+               <label for="Nom ">Nombre:</label> <div class="campo"> <input type="text" placeholder="Pon aqui tu nombre" name="nom"/></div>
+               <label for="Cognom">Apellido:</label> <div class="campo"><input type="text" name="cognom"/></div>
+                <label for="Cognom2 ">Apellido 2:  </label><div class="campo"> <input type="text" name="cognom2"/></div>
+                <label for="Edad">Edad: </label><div class="campo"><input type="number" name="Edad" /></div>
+                <label for="correo ">Mail: </label><div class="campo"><input type="email" name="correo" /></div>
+                <label for="color">Color favorito: </label><div class="campo"><input type="text" name="color" /></div>
+                <label form=""> Sexo </label><div class="campo">
+                        <input type="radio" name="sexo" id="hombre" value="H"> Hombre </input> 
+                        <input type="radio" name="sexo" id="mujer" value="M"/> Mujer</input> 
+                </div>
+                </div>
+
+        
+        
+        
+
+
+
+        </fieldset>
+    
+
+
+
+        <fieldset class="FondoFormulario"><legend class="TextoLeyenda">Datos academicos </legend>
+                <div class="FormularioFlex">
+                <div>       
+            <label for="Idiomas" >Idiomas </label>
+            <select name="idioma" id="idioma" >
+                    <option value="ingles"> Ingles</option>
+                    <option value="Frances"> Frances</option>
+                    <option value="Español"> Español</option>
+            </select>
+                </div> 
+                 <div>      
+            <label for="Idiomas" >Estudios </label>
+            <select name="idioma" id="idioma" >
+                    <option value="CFGM"> CFGM</option>
+                    <option value="CFGS"> CFGS</option>
+                    <option value="Bachillerato"> Bachillerato</option>
+                    <option value="ESO"> ESO</option>
+            </select>
+                </div>  
+                </div>
+        
+            
+        
+        </fieldset>
+
+
+        <fieldset class="FondoFormulario"><legend class="TextoLeyenda">Fitxer adjunt </legend>
+                <div>
+                <div><label class="EtiquetaQuestionario" for="archivo">Selecciona un archivo:</label></div>
+                <div><input type="file" id="archivo" name="archivo"></div>
+                </div>
+
+                <div>
+                
+                <label > Escribe aqui tu explicacion </label>
+                <textarea autofocus="autofocus" name="presentacion" id="presentacion"></textarea>
+                </div>
+
+        
+        </fieldset>
+
+
+        <fieldset class="FondoFormulario">
+                <legend class="TextoLeyenda">Politica de privacidad y envío </legend>
+                <div>
+                        <fieldset>
+                        <label class="EtiquetaQuestionario" form=""> Acepto la Politica de Privacidad </label>
+                        <input type="checkbox" name="privacidad" id="privacidad"/> 
+                        </fieldset>
+                </div>
+                
+                <div class="FondoFormularioEntregamos">
+                        <fieldset>
+                        <input type="reset" value="borra datos"/>
+                        <input type="submit" value="Enviar"/>
+                        </fieldset>
+                </div>
+        
+        </fieldset>
+
+
+
+        
+
+        </div>
+        </form>
+    </main>
+        <footer>
+                <h2 class="h2-pie">Espero que te haya parecido interesante</h2>
+        </footer>
+	</body>
+</html>

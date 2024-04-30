@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <h1>Formulari</h1>
+    </header>
+    <body>
+
+        <form method="GET" action="/ex4?nota={{nota}}&modul={{modul}}&color={{color}}">
+
+
+        
+            <fieldset class="FondoFormulario"> <legend class="TextoLeyenda"> Datos personales </legend>
+                    <div class="FormularioFlex2">
+                    <div>
+                    <div><label for="modul">Nom modul</label> <div class="campo"><input id="modul" type="text" placeholder="Pon aqui tu modulo" name="modul"/></div></div>
+                    </div>
+                    </div>
+
+
+            <div> <p> </p></div>
+
+
+            <label for="nota" >nota</label>
+                <select name="nota" id="nota" >
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                        <option value="6"> 6</option>
+                        <option value="7"> 7</option>
+                        <option value="8"> 8</option>
+                        <option value="9"> 9</option>
+                        <option value="10"> 10</option>
+                </select>
+
+            
+                <div><label for="color">Escull el color </label> 
+                <input id="color" type="color" placeholder="Pon aqui tu color" name="color"/></div>
+
+                <div><p> </p> </div>
+                <legend class="TextoLeyenda">Mostra imatge d'un gat</legend>
+                <input type="checkbox" name="img_gato" id="img_gato"/> 
+            </fieldset>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </body>
+</body>
+</html>

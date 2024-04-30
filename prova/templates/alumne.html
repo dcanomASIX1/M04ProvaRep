@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OSTRAS</h1>
+    <p>{{alumne}} tret un {{nota}} a {{modul}}</p>
+
+    {% if (nota >= 5) and  (nota <= 7) %}
+        <h2>he aprobado</h2>
+    {% elif (nota >= 7) %}
+        <h2>notable</h2>
+    {% else %}
+        <h2>he suspendido</h2>
+    {% endif %}
+    
+    {% for a in range(nota) %}
+    {% if nota >= 5  %}
+    <h2>he aprobado</h2>
+    {% else %}
+    <h2>he suspendido</h2>
+    {% endif %}
+    {% endfor%}
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes>
+    <moduls>
+        <modul codi="M01">Sistemes operatius</modul>
+        <modul codi="M02">Bases de dades</modul>
+        <modul codi="M03">Programació</modul>
+        <modul codi="M04">Marques</modul>
+        <modul codi="M08">Desplegament d'apps webs</modul>
+    </moduls>
+    <alumnes>
+        <alumne>
+            <nom>
+                Ian Cortés
+            </nom>
+            <nota codi="M01">7</nota>
+            <nota codi="M02">6</nota>
+            <nota codi="M03">5</nota>
+            <nota codi="M04">9</nota>
+            <nota codi="M08">8</nota>
+        </alumne>
+        <alumne>
+            <nom>
+                Robert López
+            </nom>
+            <nota codi="M01">10</nota>
+            <nota codi="M02">10</nota>
+            <nota codi="M03">8</nota>
+            <nota codi="M04">4</nota>
+            <nota codi="M08">2</nota>
+        </alumne>
+        <alumne>
+            <nom>
+                Lola Estribor
+            </nom>
+            <nota codi="M01">7</nota>
+            <nota codi="M02">8</nota>
+            <nota codi="M03">8</nota>
+            <nota codi="M04">8</nota>
+            <nota codi="M08">7</nota>
+        </alumne>        
+    </alumnes>
+</notes>

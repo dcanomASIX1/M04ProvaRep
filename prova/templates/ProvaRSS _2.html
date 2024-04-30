@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{d.feed.title}}</h1>
+    <h1>{{d.feed.title}}</h1>
+    {% for a in d.entries %}
+    <h1>{{a.title}}</h1>
+    <a href="{{a.link}}">asdasd</a>
+    <h1>{{a.description}}</h1>
+    <h1>{{a.pubDate}}</h1>
+    <a href="{{a.guid}}">asdad</a>
+    {% endfor %}
+
+    <h1>{{d.entries.link}}</h1>
+</body>
+</html>
